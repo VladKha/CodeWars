@@ -1,6 +1,6 @@
-from datetime import datetime
-
 import sys
+
+from datetime import datetime
 
 
 class Test:
