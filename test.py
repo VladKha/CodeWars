@@ -1,5 +1,4 @@
-import sys
-
+import atexit
 from datetime import datetime
 
 
@@ -72,4 +71,4 @@ class Test:
             print("Better luck next time!")
 
 test = Test()
-sys.exitfunc = test.report
+atexit.register(test.report)
