@@ -1,3 +1,7 @@
+"""
+Source from https://github.com/ChristianECooper
+"""
+
 import atexit
 from datetime import datetime
 
