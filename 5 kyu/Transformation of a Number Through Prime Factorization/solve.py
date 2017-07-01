@@ -29,14 +29,14 @@ def is_prime(n):
 
 def prime_factors(n):
     result = []
+    i = 2
     while n != 1:
-        for i in range(2, n + 1):
-            if is_prime(n):
-                i = n
-            if n % i == 0:
-                result.append(i)
-                n //= i
-                break
+        if is_prime(n):
+            i = n
+        while n % i == 0:
+            result.append(i)
+            n //= i
+        i += 1
     return result
 
 
