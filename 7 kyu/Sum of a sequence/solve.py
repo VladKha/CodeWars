@@ -1,6 +1,3 @@
-def sequence_sum(begin_number, end_number, step):
-    if end_number < begin_number:
-        return 0
-    n = (end_number - begin_number) // step
-    end_number = begin_number + n * step
-    return (begin_number + end_number) * (n + 1) / 2
+def sequence_sum(a, b, step):
+    n = (b - a) // step
+    return 0 if n < 0 else (n + 1) * (n * step + 2 * a) // 2
